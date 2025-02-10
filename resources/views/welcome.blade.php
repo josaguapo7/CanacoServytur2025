@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Canaco Servytur 2025</title>
+        <title>Canaco Servytur San Crsitobal</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -24,12 +24,12 @@
 
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Canaco</span>
+    <a href="" class="flex items-center space-x-8 rtl:space-x-reverse">
+            <img src="resource/imagenes/Canaco.jpg" class="h-8" alt="">
+            <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white font-sans">Canaco</span>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -40,16 +40,18 @@
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Sobre nosotros</a>
+            <a href="sobrenosotros" class="block py-2 px-3 text-xl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-2xl transition-all duration-300" aria-current="page">
+                Sobre nosotros
+            </a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">¿Quieres afiliarte?</a>
+          <a href="afiliarte" class="block py-2 px-3 text-xl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-2xl transition-all duration-300" aria-current="page">¿Quieres afiliarte?</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Nuestros Servicios</a>
+          <a href="#" class="block py-2 px-3 text-xl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-2xl transition-all duration-300" aria-current="page">Nuestros Servicios</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contactanos</a>
+          <a href="#" class="block py-2 px-3 text-xl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-2xl transition-all duration-300" aria-current="page">Contactanos</a>
         </li>
       </ul>
     </div>
@@ -196,7 +198,7 @@
   </button>
 </div>
 
-<div class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6">
+{{--<div class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6">
     <div class="text-center mb-10">
         <h2 class="text-4xl tracking-tight font-bold text-primary-800">Highlighted Features</h2>
     </div>
@@ -239,72 +241,235 @@
 
         </div>
     </div>
+</div>--}}
+
+<a href="#" class="flex flex-col md:flex-row items-center bg-white border border-gray-300 rounded-lg shadow-lg  md:max-w-2xl hover:shadow-xl transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto mt-20 mb-10">
+    <img class="object-cover w-full md:w-64 rounded-t-lg md:rounded-l-lg h-96 md:h-auto" src="/docs/images/blog/image-4.jpg" alt="">
+    <div class="flex flex-col justify-between p-6 leading-relaxed">
+        <h5 class="mb-4 text-3xl font-extrabold tracking-wide text-gray-900 dark:text-white">
+            CANACO SERVYTUR SAN CRISTOBAL DE LAS CASAS
+        </h5>
+        <p class="mb-4 text-xl text-gray-600 dark:text-gray-300">
+            La mision de Canaco Servytur SCLC, es representar, defender promover los intereses legitimos del comercio, los servicios, y el turismo, ante las autoridades Municipales, Estatales y Federales.
+
+
+        </p>
+        <button class="self-start px-5 py-2 mt-2 text-white bg-blue-700 rounded-full hover:bg-blue-800 transition-all duration-300">
+            Read More
+        </button>
+    </div>
+</a>
+
+<center><h3 class="text-gray-500 text-xl font-serif mt-20 mb-5">HAZ TU ELECCIÓN</h3></center>
+<center><h3 class=" text-6xl font-serif mt-5 mb-5">Lista de Precios del SIEM</h3></center>
+<div class="flex flex-wrap justify-center space-x-4 mt-6 mb-6">
+
+    <!-- Card 1 -->
+    <div class="w-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
+        <div class="flex items-baseline text-gray-900 dark:text-white">
+            <span class="text-3xl font-semibold">$</span>
+            <span class="text-5xl font-extrabold tracking-tight">49</span>
+            <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+        </div>
+        <ul class="space-y-5 my-7">
+            <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                </svg>
+                <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">2 team members</span>
+            </li>
+            <!-- Agrega más items aquí si es necesario -->
+        </ul>
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 w-full">
+            Choose plan
+        </button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="w-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
+        <div class="flex items-baseline text-gray-900 dark:text-white">
+            <span class="text-3xl font-semibold">$</span>
+            <span class="text-5xl font-extrabold tracking-tight">49</span>
+            <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+        </div>
+        <ul class="space-y-5 my-7">
+            <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                </svg>
+                <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">2 team members</span>
+            </li>
+            <!-- Agrega más items aquí si es necesario -->
+        </ul>
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 w-full">
+            Choose plan
+        </button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="w-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
+        <div class="flex items-baseline text-gray-900 dark:text-white">
+            <span class="text-3xl font-semibold">$</span>
+            <span class="text-5xl font-extrabold tracking-tight">49</span>
+            <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+        </div>
+        <ul class="space-y-5 my-7">
+            <li class="flex items-center">
+                <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                </svg>
+                <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">2 team members</span>
+            </li>
+            <!-- Agrega más items aquí si es necesario -->
+        </ul>
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 w-full">
+            Choose plan
+        </button>
+    </div>
+
 </div>
 
+{{--<table class="table-auto">
+    <thead>
+      <tr>
+        <th>Song</th>
+        <th>Artist</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+        <td>Malcolm Lockyer</td>
+        <td>1961</td>
+      </tr>
+      <tr>
+        <td>Witchy Woman</td>
+        <td>The Eagles</td>
+        <td>1972</td>
+      </tr>
+      <tr>
+        <td>Shining Star</td>
+        <td>Earth, Wind, and Fire</td>
+        <td>1975</td>
+      </tr>
+    </tbody>
+  </table>--}}
 
+  <div class="max-w-7xl mx-auto p-4 md:p-8">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div class="bg-gray-50 rounded-lg p-6">
+        <h2 class="text-3xl font-bold text-indigo-900 mb-4">Get in touch</h2>
+        <p class="text-gray-600 mb-8 text-sm">Feel free to contact us and we will get back to you as soon as possible</p>
 
-<div class="relative overflow-x-auto">
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Product name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Color
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Category
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Price
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple MacBook Pro 17"
-                </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    Laptop
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Microsoft Surface Pro
-                </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
-                <td class="px-6 py-4">
-                    Laptop PC
-                </td>
-                <td class="px-6 py-4">
-                    $1999
-                </td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Magic Mouse 2
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+        <div class="space-y-4">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full p-3 rounded-lg bg-white border text-sm border-gray-200 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none"
+          />
+          <input
+            type="email"
+            placeholder="E-mail"
+            class="w-full p-3 rounded-lg bg-white border text-sm border-gray-200 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none"
+          />
+          <textarea
+            placeholder="Message"
+            rows={4}
+            class="w-full p-3 rounded-lg bg-white border text-sm border-gray-200 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none resize-none"
+          ></textarea>
+          <button
+            type="button"
+            class="w-full text-sm bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+
+      <div class="space-y-8">
+        <div class="bg-white rounded-lg p-6 shadow">
+          <h3 class="text-xl font-semibold text-indigo-900 mb-6">Contact Information</h3>
+
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-indigo-900" viewBox="0 0 64 64">
+                <path d="M32 0A24.032 24.032 0 0 0 8 24c0 17.23 22.36 38.81 23.31 39.72a.99.99 0 0 0 1.38 0C33.64 62.81 56 41.23 56 24A24.032 24.032 0 0 0 32 0zm0 35a11 11 0 1 1 11-11 11.007 11.007 0 0 1-11 11z" data-original="#000000" />
+              </svg>
+              <div>
+                <h4 class="font-semibold text-gray-900 text-sm mb-1">Our Location</h4>
+                <p class="text-gray-600 text-sm">123 Business Street</p>
+                <p class="text-gray-600 text-sm">New York, NY 10001</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-indigo-900" viewBox="0 0 513.64 513.64">
+                <path d="m499.66 376.96-71.68-71.68c-25.6-25.6-69.12-15.359-79.36 17.92-7.68 23.041-33.28 35.841-56.32 30.72-51.2-12.8-120.32-79.36-133.12-133.12-7.68-23.041 7.68-48.641 30.72-56.32 33.28-10.24 43.52-53.76 17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12 0L18.38 62.08c-48.64 51.2 5.12 186.88 125.44 307.2s256 176.641 307.2 125.44l48.64-48.64c17.921-20.48 17.921-51.2 0-69.12z" data-original="#000000" />
+              </svg>
+              <div>
+                <h4 class="font-semibold text-gray-900 text-sm mb-1">Phone Number</h4>
+                <p class="text-gray-600 text-sm">+1 (555) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-indigo-900" viewBox="0 0 512 512">
+                <path d="M298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981L3.409 173.82A76.269 76.269 0 0 1 0 171.403V400.6c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133V171.402a75.21 75.21 0 0 1-3.416 2.422z" data-original="#000000" />
+                <path d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942L491.95 148.858c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117H47.117C21.137 64.267 0 85.403 0 111.408a44.912 44.912 0 0 0 20.05 37.45z" data-original="#000000" />
+              </svg>
+              <div>
+                <h4 class="font-semibold text-gray-900 text-sm mb-1">Email Address</h4>
+                <p class="text-gray-600 text-sm">contact@business.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow">
+          <h3 class="text-xl font-semibold text-indigo-900 mb-6">Hours of Operation</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <span class="text-gray-600 text-sm">Monday - Friday</span>
+              <span class="text-gray-800 text-sm">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600 text-sm">Saturday</span>
+              <span class="text-gray-800 text-sm">10:00 AM - 4:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600 text-sm">Sunday</span>
+              <span class="text-gray-800 text-sm">Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="pt-16 pb-7 px-2 w-full">
+    <div class="w-full px-4 lg:px-12 p-12 rounded-2xl bg-neutral-100">
+      <div class="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-200">
+        <a href="https://pagedone.io/" class="py-1.5">
+          <!-- SVG Logo -->
+        </a>
+        <nav class="flex flex-wrap justify-center space-x-4 text-gray-600">
+          <a href="#" class="hover:text-gray-900">Inicio</a>
+          <a href="#" class="hover:text-gray-900">Nosotros</a>
+          <a href="#" class="hover:text-gray-900">Servicios</a>
+          <a href="#" class="hover:text-gray-900">Contacto</a>
+        </nav>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
+        <p>© 2024 Todos los derechos reservados.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-900">Privacidad</a>
+          <a href="#" class="hover:text-gray-900">Términos</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
