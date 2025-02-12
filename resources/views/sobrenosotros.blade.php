@@ -6,6 +6,7 @@
     <title>Bienvenido</title>
 </head>
 <body>
-    <h1>¡Hola, bienvenido a Somos nosotros!</h1>
+ 
+
 </body>
 </html>
