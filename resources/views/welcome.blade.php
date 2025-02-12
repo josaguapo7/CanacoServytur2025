@@ -24,7 +24,7 @@
 
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="" class="flex items-center space-x-8 rtl:space-x-reverse">
+    <a href="login" class="flex items-center space-x-8 rtl:space-x-reverse">
             <img src="resource/imagenes/Canaco.jpg" class="h-8" alt="">
             <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white font-sans">Canaco</span>
     </a>
@@ -51,7 +51,7 @@
           <a href="#" class="block py-2 px-3 text-xl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-2xl transition-all duration-300" aria-current="page">Nuestros Servicios</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-xl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-2xl transition-all duration-300" aria-current="page">Contactanos</a>
+          <a href="" class="block py-2 px-3 text-xl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-2xl transition-all duration-300" aria-current="page">Contactanos</a>
         </li>
       </ul>
     </div>
@@ -331,6 +331,38 @@
     </div>
 
 </div>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con Google Maps</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Mapa Interactivo</h2>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            var location = { lat: -92.63931, lng: 16.72734 }; // Ubicación de ejemplo
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+</body>
 
 {{--<table class="table-auto">
     <thead>
