@@ -104,23 +104,26 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-      <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-8 transform transition duration-300 hover:scale-105">
-        <div class="text-5xl mb-2">🏢</div>
-        <h2 class="text-4xl mt-8 font-extrabold">+350</h2>
-        <p class="text-lg mt-5">Negocios afiliados</p>
+      <div class="bg-gradient-to-r from-[#312e81] to-[#4263c1] text-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
+        <img src="{{ asset('imagenes/edificio.png') }}" alt="Icono de edificio" class="w-20 h-20 mb-4">                      
+        <h2 class="text-4xl mt-4 font-extrabold">+350</h2>
+        <p class="text-lg mt-2">Negocios afiliados</p>
       </div>
 
-      <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-8 transform transition duration-300 hover:scale-105">
-        <div class="text-5xl mb-2">🕰️</div>
-        <h2 class="text-4xl mt-8 font-extrabold">+100 años</h2>
-        <p class="text-lg mt-5">Apoyando al comercio local</p>
+      <!-- Card 1 -->
+      <div class="bg-gradient-to-br from-[#1e3a8a] to-[#4263c1] text-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
+          <img src="{{ asset('imagenes/reloj.png') }}" alt="reloj icono" class="w-20 h-20 mb-4">
+          <h2 class="text-4xl mt-4 font-extrabold">+100 años</h2>
+          <p class="text-lg mt-2">Apoyando al comercio local</p>
       </div>
 
-      <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-8 transform transition duration-300 hover:scale-105">
-        <div class="text-5xl mb-2">📅</div>
-        <h2 class="text-4xl mt-8 font-extrabold">+50</h2>
-        <p class="text-lg mt-5">Eventos y capacitaciones</p>
+      <!-- Card 2 -->
+      <div class="bg-gradient-to-bl from-[#0f172a] to-[#4263c1] text-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
+          <img src="{{ asset('imagenes/curso.png') }}" alt="curso icono" class="w-20 h-20 mb-4">
+          <h2 class="text-4xl mt-4 font-extrabold">+50</h2>
+          <p class="text-lg mt-2">Eventos y capacitaciones</p>
       </div>
+
     </div>
 
     <div class="mt-10">
