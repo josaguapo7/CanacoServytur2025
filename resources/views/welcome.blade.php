@@ -95,6 +95,39 @@
     </div>
 </a>
 
+<section class="bg-gradient-to-b from-white to-blue-50 py-16">
+  <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 text-center">
+    <div class="mb-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-900">Nuestro Impacto en el Comercio Local</h2>
+      <p class="text-blue-800 mt-2">Resultados que nos respaldan: Creciendo juntos cada día</p>
+      <div class="w-24 h-1 bg-blue-900 mx-auto mt-3 rounded"></div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+      <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-8 transform transition duration-300 hover:scale-105">
+        <div class="text-5xl mb-2">🏢</div>
+        <h2 class="text-4xl mt-8 font-extrabold">+350</h2>
+        <p class="text-lg mt-5">Negocios afiliados</p>
+      </div>
+
+      <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-8 transform transition duration-300 hover:scale-105">
+        <div class="text-5xl mb-2">🕰️</div>
+        <h2 class="text-4xl mt-8 font-extrabold">+100 años</h2>
+        <p class="text-lg mt-5">Apoyando al comercio local</p>
+      </div>
+
+      <div class="bg-blue-900 text-white rounded-2xl shadow-lg p-8 transform transition duration-300 hover:scale-105">
+        <div class="text-5xl mb-2">📅</div>
+        <h2 class="text-4xl mt-8 font-extrabold">+50</h2>
+        <p class="text-lg mt-5">Eventos y capacitaciones</p>
+      </div>
+    </div>
+
+    <div class="mt-10">
+      <a href="afiliarte" class="bg-blue-900 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-800 transition">¡Quiero ser parte!</a>
+    </div>
+  </div>
+</section>
 
 <center><h3 class="text-gray-500 text-xl font-family: 'Poppins', sans-serif; mt-20 mb-5">HAZ TU ELECCIÓN</h3></center>
 <center><h1 class="text-4xl font-extrabold font-[Bebas_Neue] uppercase tracking-widest">Lista de Precios del SIEM</h1></center>
