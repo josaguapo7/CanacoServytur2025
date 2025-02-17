@@ -98,34 +98,33 @@
 <section class="bg-gradient-to-b from-white to-blue-50 py-16">
   <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 text-center">
     <div class="mb-8">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-900">Nuestro Impacto en el Comercio Local</h2>
-      <p class="text-blue-800 mt-2">Resultados que nos respaldan: Creciendo juntos cada día</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-black">Nuestro Impacto en el Comercio Local</h2><br>
+      <p class="text-black mt-2">Resultados que nos respaldan: Creciendo juntos cada día</p> <br>
       <div class="w-24 h-1 bg-blue-900 mx-auto mt-3 rounded"></div>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-      <div class="bg-gradient-to-r from-[#312e81] to-[#4263c1] text-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
-        <img src="{{ asset('imagenes/edificio.png') }}" alt="Icono de edificio" class="w-20 h-20 mb-4">                      
+      <div class="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
+        <img src="{{ asset('imagenes/edificio.png') }}" alt="Icono de edificio" class="w-20 h-20 mb-4">                       
         <h2 class="text-4xl mt-4 font-extrabold">+350</h2>
         <p class="text-lg mt-2">Negocios afiliados</p>
       </div>
 
-      <!-- Card 1 -->
-      <div class="bg-gradient-to-br from-[#1e3a8a] to-[#4263c1] text-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
-          <img src="{{ asset('imagenes/reloj.png') }}" alt="reloj icono" class="w-20 h-20 mb-4">
-          <h2 class="text-4xl mt-4 font-extrabold">+100 años</h2>
-          <p class="text-lg mt-2">Apoyando al comercio local</p>
+      <div class="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
+        <img src="{{ asset('imagenes/reloj.png') }}" alt="reloj icono" class="w-20 h-20 mb-4">
+        <h2 class="text-4xl mt-4 font-extrabold">+100 años</h2>
+        <p class="text-lg mt-2">Apoyando al comercio local</p>
       </div>
 
-      <!-- Card 2 -->
-      <div class="bg-gradient-to-bl from-[#0f172a] to-[#4263c1] text-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
-          <img src="{{ asset('imagenes/curso.png') }}" alt="curso icono" class="w-20 h-20 mb-4">
-          <h2 class="text-4xl mt-4 font-extrabold">+50</h2>
-          <p class="text-lg mt-2">Eventos y capacitaciones</p>
+      <div class="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
+        <img src="{{ asset('imagenes/curso.png') }}" alt="curso icono" class="w-20 h-20 mb-4">
+        <h2 class="text-4xl mt-4 font-extrabold">+50</h2>
+        <p class="text-lg mt-2">Eventos y capacitaciones</p>
       </div>
+
 
     </div>
-
+<br><br>
     <div class="mt-10">
       <a href="afiliarte" class="bg-blue-900 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-800 transition">¡Quiero ser parte!</a>
     </div>
