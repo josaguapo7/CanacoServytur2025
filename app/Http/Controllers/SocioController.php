@@ -11,8 +11,10 @@ class SocioController extends Controller
 {
     public function index()
     {
-        $socios = Socio::all(); // Obtener socios de la base de datos
-        return view('socios.index', compact('socios')); // Enviar datos a la vista
+
+        $Socios = Socio::all(); // Obtener socios de la base de datos
+        return view('socios.index', compact('Socios')); // Enviar datos a la vista
+
     }
 
     public function importar(Request $request)
