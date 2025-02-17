@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SocioController;
+
 use App\Http\Controllers\Auth\LoginController;
 
 
@@ -18,6 +19,8 @@ Route::get('/dashboard', function () {
 })->middleware('auth');
 
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -30,9 +33,18 @@ Route::get('/afiliarte', function () {
     return view('afiliarte');
 });
 
+
 Route::get('/socios', function () {
     return view('socios.index');
 });
 
 Route::get('/socios', [SocioController::class, 'index'])->name('Socios.index');
 Route::post('/socios/importar', [SocioController::class, 'importar'])->name('Socios.importar');
+=======
+Route::get('/index', function () {
+    return view('index');
+});
+
+Route::get('/socios', [SocioController::class, 'index'])->name('Socios.index');
+Route::post('/socios/importar', [SocioController::class, 'importar'])->name('socios.importar');
+

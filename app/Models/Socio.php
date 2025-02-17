@@ -2,11 +2,15 @@
 
 namespace App\Models;
 
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+
 use Illuminate\Database\Eloquent\Model;
 
 class Socio extends Model
 {
+
     use HasFactory;
 
     protected $fillable = [
@@ -18,4 +22,7 @@ class Socio extends Model
         'telefono',
         'codigo_qr',
     ];
+
+    //
+
 }
