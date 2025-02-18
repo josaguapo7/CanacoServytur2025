@@ -17,7 +17,6 @@ Route::get('/afiliarte', function () {
 
 Route::get('/index', function () {
     return view('index');
-});
+    });
 
-Route::get('/socios', [SocioController::class, 'index'])->name('Socios.index');
-Route::post('/socios/importar', [SocioController::class, 'importar'])->name('socios.importar');
+
