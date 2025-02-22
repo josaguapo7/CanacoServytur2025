@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SocioController;
+use App\Http\Controllers\ContactoController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,3 +21,5 @@ Route::get('/index', function () {
     });
 
 
+
+    Route::post('/enviar-formulario', [ContactoController::class, 'enviarFormulario'])->name('enviar.formulario');
