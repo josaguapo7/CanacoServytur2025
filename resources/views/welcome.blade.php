@@ -64,7 +64,7 @@
     <!-- Imagen de fondo con degradado -->
     <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('https://www.monitoratec.com.br/blog/wp-content/uploads/2020/12/AdobeStock_332234118-min-740x416.jpeg');"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-transparent"></div>
-    
+
     <!-- Contenido -->
     <div class="relative z-10 text-center max-w-2xl px-6">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-lg">
@@ -85,7 +85,7 @@
     <div class="w-full md:w-1/2 h-72 md:h-auto overflow-hidden rounded-t-lg md:rounded-l-lg">
         <img class="object-cover w-full h-full" src="{{ asset('imagenes/canaco camara.jpeg') }}">
     </div>
-    
+
     <!-- Contenido de la tarjeta -->
     <div class="flex flex-col justify-between p-6 leading-relaxed w-full md:w-1/2">
         <h5 class="mb-4 text-3xl font-extrabold tracking-wide text-gray-900 dark:text-white">
@@ -107,7 +107,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
       <div class="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
-        <img src="{{ asset('imagenes/edificio.png') }}" alt="Icono de edificio" class="w-20 h-20 mb-4">                       
+        <img src="{{ asset('imagenes/edificio.png') }}" alt="Icono de edificio" class="w-20 h-20 mb-4">
         <h2 class="text-4xl mt-4 font-extrabold">+350</h2>
         <p class="text-lg mt-2">Negocios afiliados</p>
       </div>
@@ -140,7 +140,7 @@
 {{--<div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 auto-rows-min">
     <details class="w-full bg-white border-2 border-blue-900 text-blue-900 p-4 rounded-lg shadow-md overflow-hidden max-h-[70px] open:max-h-full transition-all duration-300">
         <summary class="text-xl font-bold cursor-pointer flex items-center justify-between">
-            0 - 2 empleados 
+            0 - 2 empleados
             <span class="transition-transform duration-300 open:rotate-180">▼</span>
         </summary>
         <div class="mt-2">
@@ -152,7 +152,7 @@
 
     <details class="w-full bg-blue-900 text-white p-4 rounded-lg shadow-md overflow-hidden max-h-[70px] open:max-h-full transition-all duration-300">
         <summary class="text-xl font-bold cursor-pointer flex items-center justify-between">
-            3 empleados 
+            3 empleados
             <span class="transition-transform duration-300 open:rotate-180">▼</span>
         </summary>
         <div class="mt-2">
@@ -164,7 +164,7 @@
 
     <details class="w-full bg-white border-2 border-blue-900 text-blue-900 p-4 rounded-lg shadow-md overflow-hidden max-h-[70px] open:max-h-full transition-all duration-300">
         <summary class="text-xl font-bold cursor-pointer flex items-center justify-between">
-            4 - 10 empleados 
+            4 - 10 empleados
             <span class="transition-transform duration-300 open:rotate-180">▼</span>
         </summary>
         <div class="mt-2">
@@ -176,7 +176,7 @@
 
     <details class="w-full bg-white border-2 border-blue-900 text-blue-900 p-4 rounded-lg shadow-md overflow-hidden max-h-[70px] open:max-h-full transition-all duration-300">
         <summary class="text-xl font-bold cursor-pointer flex items-center justify-between">
-            10 - 20 empleados 
+            10 - 20 empleados
             <span class="transition-transform duration-300 open:rotate-180">▼</span>
         </summary>
         <div class="mt-2">
@@ -188,7 +188,7 @@
 
     <details class="w-full bg-blue-900 text-white p-4 rounded-lg shadow-md overflow-hidden max-h-[70px] open:max-h-full transition-all duration-300">
         <summary class="text-xl font-bold cursor-pointer flex items-center justify-between">
-            20 - 30 empleados 
+            20 - 30 empleados
             <span class="transition-transform duration-300 open:rotate-180">▼</span>
         </summary>
         <div class="mt-2">
@@ -200,7 +200,7 @@
 
     <details class="w-full bg-white border-2 border-blue-900 text-blue-900 p-4 rounded-lg shadow-md overflow-hidden max-h-[70px] open:max-h-full transition-all duration-300">
         <summary class="text-xl font-bold cursor-pointer flex items-center justify-between">
-            30 - 40 empleados 
+            30 - 40 empleados
             <span class="transition-transform duration-300 open:rotate-180">▼</span>
         </summary>
         <div class="mt-2">
@@ -212,7 +212,7 @@
 
     <details class="w-full bg-white border-2 border-blue-900 text-blue-900 p-4 rounded-lg shadow-md overflow-hidden max-h-[70px] open:max-h-full transition-all duration-300">
         <summary class="text-xl font-bold cursor-pointer flex items-center justify-between">
-            40 a MÁS empleados 
+            40 a MÁS empleados
             <span class="transition-transform duration-300 open:rotate-180">▼</span>
         </summary>
         <div class="mt-2">
@@ -256,6 +256,47 @@
         </a>
     </div>
 </div>
+
+<div class="relative flex flex-col md:flex-row w-full my-6 bg-white shadow-sm border border-slate-200 rounded-lg">
+    <div class="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden">
+        <img
+            src="https://concanaco.digital/canacosancristobaldelascasas/assets/images/galeria/img-canaco.png"
+            alt="card-image"
+            class="h-full w-full rounded-md md:rounded-lg object-cover"
+        />
+    </div>
+    <div class="p-6 flex flex-col justify-between w-full">
+        <div>
+
+            <center><h3 class="mb-2 text-slate-800 text-xl font-semibold">
+
+            </h3>
+            </h3></center>
+        </div>
+
+
+        <div class="w-full h-64 rounded-lg overflow-hidden shadow-md my-4">
+            <iframe
+                class="w-full h-full border-0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.9941938385396!2d-92.64190912614873!3d16.727141521492175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ed4515547feb2b%3A0xb009eb6939abb824!2sCanaco!5e0!3m2!1sen!2smx!4v1740270324398!5m2!1sen!2smx"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+
+        <div>
+            <a href="https://maps.app.goo.gl/P2pUvj2tQCEECdun7"
+            target="_blank"
+               class="text-teal-600 font-semibold text-sm hover:underline flex items-center">
+                Cómo llegar
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
 
 <div class="max-w-1xl mx-auto p-1 md:p-6">
     <div class="grid md:grid-cols-2 gap-8 items-start">
