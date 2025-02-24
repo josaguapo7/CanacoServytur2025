@@ -21,5 +21,6 @@ class ContactoController extends Controller
         Mail::to('josafatrujillo604@gmail.com')->send(new ContactoMailable($datos));
 
         return back()->with('success', 'Correo enviado correctamente.');
+
     }
 }

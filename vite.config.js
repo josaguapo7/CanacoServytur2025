@@ -1,7 +1,5 @@
 import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin'; // Si usas Laravel
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
+import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
     plugins: [
@@ -10,9 +8,4 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    css: {
-        postcss: {
-            plugins: [tailwindcss(), autoprefixer()],
-        },
-    },
 });
