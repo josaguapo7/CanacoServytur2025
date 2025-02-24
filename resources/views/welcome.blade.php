@@ -256,11 +256,12 @@
         </a>
     </div>
 </div>
+<br><br><br>
 
 <div class="relative flex flex-col md:flex-row w-full my-6 bg-white shadow-sm border border-slate-200 rounded-lg">
     <div class="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden">
         <img
-            src="https://concanaco.digital/canacosancristobaldelascasas/assets/images/galeria/img-canaco.png"
+            src="{{ asset('imagenes/fachada.jpeg') }}"
             alt="card-image"
             class="h-full w-full rounded-md md:rounded-lg object-cover"
         />
@@ -297,6 +298,7 @@
     </div>
 </div>
 
+<br><br><br>
 
 <div class="max-w-1xl mx-auto p-1 md:p-6">
     <div class="grid md:grid-cols-2 gap-8 items-start">
