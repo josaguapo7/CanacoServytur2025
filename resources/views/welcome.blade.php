@@ -60,6 +60,17 @@
     </div>
 </nav>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector("[data-collapse-toggle='navbar-sticky']");
+    const menu = document.getElementById("navbar-sticky");
+
+    menuButton.addEventListener("click", function () {
+      menu.classList.toggle("hidden");
+    });
+  });
+</script>
+
 <section class="relative w-full h-[500px] md:h-[600px] lg:h-[700px] bg-gray-900 text-white flex items-center justify-center overflow-hidden">
     <!-- Imagen de fondo con degradado -->
     <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('https://www.monitoratec.com.br/blog/wp-content/uploads/2020/12/AdobeStock_332234118-min-740x416.jpeg');"></div>
