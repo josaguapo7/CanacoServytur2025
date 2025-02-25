@@ -23,9 +23,8 @@ Route::get('/index', function () {
     return view('index');
     });
 
-    Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard');
-    Route::post('/importar', [SocioController::class, 'importarExcel'])->name('importar.excel');
-    ;
+Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard');
+Route::post('/importar', [SocioController::class, 'importarExcel'])->name('importar.excel');
 
 
 Route::post('/enviar-formulario', [ContactoController::class, 'enviarFormulario'])->name('enviar.formulario');
