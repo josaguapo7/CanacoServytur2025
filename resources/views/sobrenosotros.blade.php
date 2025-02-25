@@ -51,13 +51,21 @@
         <li>
           <a href="#" class="block py-2 px-3 text-gl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300" aria-current="page">Nuestros Servicios</a>
         </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300" aria-current="page">Contactanos</a>
-        </li>
+
       </ul>
     </div>
     </div>
-  </nav>
+</nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector("[data-collapse-toggle='navbar-sticky']");
+    const menu = document.getElementById("navbar-sticky");
+
+    menuButton.addEventListener("click", function () {
+      menu.classList.toggle("hidden");
+    });
+  });
+</script>
 
   <br><br>
 
