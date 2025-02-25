@@ -53,7 +53,7 @@
           <a href="#" class="block py-2 px-3 text-gl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300" aria-current="page">Nuestros Servicios</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300" aria-current="page">Contactanos</a>
+          <a href="#contacto" class="block py-2 px-3 text-gl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300" aria-current="page">Contactanos</a>
         </li>
       </ul>
     </div>
@@ -300,7 +300,7 @@
 
 <br><br><br>
 
-<div class="max-w-1xl mx-auto p-1 md:p-6">
+<div id="contacto" class="max-w-1xl mx-auto p-1 md:p-6"> <br><br><br><br><br>
     <div class="grid md:grid-cols-2 gap-8 items-start">
         <!-- Formulario -->
         <div class="bg-gray-50 rounded-lg p-6">

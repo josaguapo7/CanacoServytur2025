@@ -77,8 +77,8 @@
     <!-- Sección con 9 círculos más grandes y distribuidos correctamente -->
     <div class="grid grid-cols-3 gap-6 mt-8 md:mt-0 relative w-1/2">
         @for ($i = 0; $i < 9; $i++)
-            <div class="w-28 h-28 rounded-full bg-gray-300 overflow-hidden shadow-lg animate-float{{ $i % 3 }}">
-                <img src="https://i.pravatar.cc/150?img={{ $i }}" alt="User Avatar" class="w-full h-full object-cover">
+            <div class="w-28 h-28 rounded-full overflow-hidden shadow-lg animate-float{{ $i % 3 }}">
+                <img src="{{ asset('imagenes/canaco.png') }}" alt="User Avatar" class="w-full h-full object-cover">
             </div>
         @endfor
     </div>

@@ -79,7 +79,7 @@
           <a href="#" class="block py-2 px-3 text-gl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300" aria-current="page">Nuestros Servicios</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300" aria-current="page">Contactanos</a>
+          <a href="#contacto" class="block py-2 px-3 text-gl text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300" aria-current="page">Contactanos</a>
         </li>
       </ul>
     </div>
