@@ -26,14 +26,14 @@
                 </div>
 
                 <button type="submit"
-                    class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition-all shadow-lg">
+                    class="w-full bg-blue-400 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition-all shadow-lg">
                     Acceder
                 </button>
             </form>
         </div>
         <div class="hidden w-full md:block">
-            <img src="{{ asset('imagenes/canaco.png') }}" 
-                alt="Login Illustration" 
+            <img src="{{ asset('imagenes/center.jpg') }}"
+                alt="Login Illustration"
                 class="w-full h-full object-cover">
         </div>
     </div>

@@ -21,6 +21,7 @@
 
 </header> --}}
 
+
 <link rel="icon" type="image/png" href="{{ asset('imagenes/canaco.png') }}">
 
 <div class="flex items-center justify-end gap-3">
