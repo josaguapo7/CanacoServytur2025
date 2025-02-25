@@ -86,7 +86,87 @@
     </div>
 </nav>
 <body>
-    <div class="mt-24 w-full flex items-center justify-center p-6">
+
+<br><br><br><br><br>
+<div class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-4xl font-bold text-center mb-4">Beneficios de Afiliación</h2>
+    <p class="text-center text-lg text-gray-600 mb-10">
+        Al afiliarte a CANACO, obtendrás acceso a múltiples beneficios para fortalecer tu negocio.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Asesoría Empresarial -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center border border-gray-200">
+            <img src="https://thumbs.dreamstime.com/b/asesoramiento-jur%C3%ADdico-para-ilustraciones-de-vectores-dibujos-animados-aislados-por-empresas-abogada-que-ayuda-la-empresa-en-253366108.jpg" alt="Asesoría Empresarial" class="w-28 h-28 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800">Asesoría Empresarial</h3>
+            <p class="text-gray-600 mt-2">Recibe asesoría en temas fiscales, legales y administrativos para tu empresa.</p>
+        </div>
+
+        <!-- Capacitación Continua -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center border border-gray-200">
+            <img src="https://png.pngtree.com/png-clipart/20230825/original/pngtree-consulting-clients-isolated-cartoon-vector-illustrations-picture-image_8710496.png" alt="Capacitación Continua" class="w-28 h-28 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800">Capacitación Continua</h3>
+            <p class="text-gray-600 mt-2">Accede a cursos, talleres y conferencias exclusivas para mejorar tu negocio.</p>
+        </div>
+
+        <!-- Red de Contactos -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center border border-gray-200">
+            <img src="https://media.istockphoto.com/id/930420128/es/vector/ilustraci%C3%B3n-de-comunicaci%C3%B3n-global-de-las-personas.jpg?s=612x612&w=0&k=20&c=uxZPfZlIM9n40Aaocj2jvLXe08RnZ_CruEifXkxmSBw=" alt="Red de Contactos" class="w-28 h-28 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800">Red de Contactos</h3>
+            <p class="text-gray-600 mt-2">Conéctate con otras empresas y amplía tus oportunidades de negocio.</p>
+        </div>
+
+        <!-- Promoción y Publicidad -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center border border-gray-200">
+            <img src="https://img.freepik.com/vector-gratis/imagenes-predisenadas-promocion-marketing-ilustradas_52683-74351.jpg" alt="Promoción y Publicidad" class="w-28 h-28 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800">Promoción y Publicidad</h3>
+            <p class="text-gray-600 mt-2">Destaca tu empresa en nuestros directorios y eventos empresariales.</p>
+        </div>
+
+        <!-- Acceso a Financiamiento -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center border border-gray-200">
+            <img src="https://st2.depositphotos.com/2419757/8513/v/450/depositphotos_85136908-stock-illustration-concept-crowd-funding-banknotes-and.jpg" alt="Acceso a Financiamiento" class="w-28 h-28 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800">Acceso a Financiamiento</h3>
+            <p class="text-gray-600 mt-2">Obtén información sobre créditos y apoyos gubernamentales para tu empresa.</p>
+        </div>
+
+        <!-- Representación y Defensa -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center text-center border border-gray-200">
+            <img src="https://static.vecteezy.com/system/resources/previews/003/774/320/non_2x/lawyer-rgb-color-icon-attorney-advocate-legal-representative-trial-courthouse-legislature-law-enforcement-justice-legal-assistance-isolated-illustration-vector.jpg" alt="Representación y Defensa" class="w-28 h-28 mb-2">
+            <h3 class="text-lg font-semibold text-gray-800">Representación y Defensa</h3>
+            <p class="text-gray-600 mt-2">CANACO te representa ante organismos gubernamentales y regula intereses del sector.</p>
+        </div>
+    </div>
+</div>
+
+
+    <div class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-4xl font-bold text-center mb-6">Requisitos para Afiliarte</h2>
+    <p class="text-center text-lg text-gray-600 mb-8">
+        Para unirte a CANACO y disfrutar de todos sus beneficios, es necesario cumplir con los siguientes requisitos:
+    </p>
+
+    <div class="bg-white p-6 shadow-lg rounded-lg">
+        <ul class="list-disc list-inside space-y-4 text-gray-700">
+            <li><span class="font-semibold">Llenar formatos de CAMARA y SIEM:</span> Formatos oficiales requeridos para el registro.</li>
+            <li><span class="font-semibold">Constancia de situación fiscal vigente:</span> Documento actualizado emitido por el SAT.</li>
+            <li><span class="font-semibold">Comprobante de domicilio:</span> Recibo de luz, agua o teléfono.</li>
+            <li><span class="font-semibold">INE del propietario o representante legal:</span> Identificación oficial vigente.</li>
+            <li><span class="font-semibold">Copia del último pago del IMSS:</span> Documento que avala el cumplimiento de las obligaciones ante el IMSS.</li>
+            <li><span class="font-semibold">Copia de Acta Constitutiva (solo para personas morales):</span> Documento que acredita la constitución legal de la empresa.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<br><br><br>
+<h2 class="text-4xl font-bold text-center">Simula tu Cuota de Afiliación</h2>
+    <p class="text-center text-lg text-gray-600 mt-2">
+    Obtén en segundos el costo de inscripción y mantenimiento en CANACO según el número de empleados de tu negocio
+    </p>
+
+    <div class="mt-10 w-full flex items-center justify-center p-6">
         <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col justify-center text-center md:text-left p-4">
                 <h1 class="text-2xl font-bold mb-4 text-gray-800">Calcula tus Cuotas de CANACO</h1>
@@ -99,6 +179,52 @@
             </div>
         </div>
     </div>
-</body>
 
+<br><br>
+<div class="bg-white shadow-md rounded-lg p-6 text-center">
+    <h2 class="text-xl font-bold text-gray-800">Descarga tus Documentos</h2>
+    <p class="text-gray-600 mt-2">
+        Toca la imagen para descargar el documento que necesitas.
+    </p>
+
+    <div class="mt-10 mb-5 flex flex-col sm:flex-row justify-center gap-6">
+        <!-- Imagen para descargar Documento 1 -->
+         
+        <a href="#" download>
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-microsoft-excel-1868959-1583123.png?f=webp" alt="Descargar Documento 1" class="w-16 h-16 cursor-pointer transition-transform transform hover:scale-110">
+        </a>
+
+        <!-- Imagen para descargar Documento 2 -->
+        <a href="#" download>
+            <img src="https://cdn-icons-png.flaticon.com/256/337/337946.png" alt="Descargar Documento 2" class="w-16 h-16 ml-10 cursor-pointer transition-transform transform hover:scale-110">
+        </a>
+    </div>
+</div>
+
+
+
+
+</body>
+    <section class="pt-16 pb-7 px-2 w-full">
+    <div class="w-full px-4 lg:px-12 p-12 rounded-2xl bg-neutral-100">
+      <div class="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-200">
+        <a href="https://pagedone.io/" class="py-1.5">
+          <!-- SVG Logo -->
+        </a>
+        <nav class="flex flex-wrap justify-center space-x-4 text-gray-600">
+          <a href="#" class="hover:text-gray-900">Inicio</a>
+          <a href="#" class="hover:text-gray-900">Nosotros</a>
+          <a href="#" class="hover:text-gray-900">Servicios</a>
+          <a href="#" class="hover:text-gray-900">Contacto</a>
+        </nav>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
+        <p>© 2024 Todos los derechos reservados.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-900">Privacidad</a>
+          <a href="#" class="hover:text-gray-900">Términos</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </html>

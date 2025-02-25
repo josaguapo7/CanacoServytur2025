@@ -248,4 +248,25 @@
 
 </div>
 
-
+<section class="pt-16 pb-7 px-2 w-full">
+    <div class="w-full px-4 lg:px-12 p-12 rounded-2xl bg-neutral-100">
+      <div class="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-200">
+        <a href="https://pagedone.io/" class="py-1.5">
+          <!-- SVG Logo -->
+        </a>
+        <nav class="flex flex-wrap justify-center space-x-4 text-gray-600">
+          <a href="#" class="hover:text-gray-900">Inicio</a>
+          <a href="#" class="hover:text-gray-900">Nosotros</a>
+          <a href="#" class="hover:text-gray-900">Servicios</a>
+          <a href="#" class="hover:text-gray-900">Contacto</a>
+        </nav>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
+        <p>© 2024 Todos los derechos reservados.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-900">Privacidad</a>
+          <a href="#" class="hover:text-gray-900">Términos</a>
+        </div>
+      </div>
+    </div>
+  </section>
