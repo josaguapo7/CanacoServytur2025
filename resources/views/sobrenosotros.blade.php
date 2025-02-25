@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Canaco Servytur San Cristobal</title>
+        <link rel="icon" type="image/png" href="{{ asset('imagenes/canaco.png') }}">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -23,9 +24,9 @@
 
 
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap justify-between  p-4">
     <a href="home" class="flex items-center space-x-8 rtl:space-x-reverse">
-            <img src="https://concanacodigital.s3.amazonaws.com/establecimientos/135.20220228113405.png" class="h-8" alt="">
+            <img src="https://concanacodigital.s3.amazonaws.com/establecimientos/135.20220228113405.png" class="h-16" alt="">
             <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white font-sans">Canaco</span>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

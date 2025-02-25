@@ -24,7 +24,7 @@
 
 
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap  justify-between  p-4">
     <a href="index" class="flex items-center space-x-8 rtl:space-x-reverse">
         <img src="https://concanacodigital.s3.amazonaws.com/establecimientos/135.20220228113405.png" class="h-16" alt="">
         <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white font-sans">Canaco</span>
@@ -58,7 +58,7 @@
       </ul>
     </div>
     </div>
-  </nav>
+</nav>
 
 <section class="relative w-full h-[500px] md:h-[600px] lg:h-[700px] bg-gray-900 text-white flex items-center justify-center overflow-hidden">
     <!-- Imagen de fondo con degradado -->
