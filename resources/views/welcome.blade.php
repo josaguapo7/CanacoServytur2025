@@ -102,7 +102,7 @@
         <h5 class="mb-4 text-3xl font-extrabold tracking-wide text-gray-900 dark:text-white">
             CANACO SERVYTUR &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  SAN CRISTOBAL DE LAS CASAS
         </h5>
-        <p class="mb-4 text-xl text-gray-600 dark:text-gray-300">
+        <p class="mb-4 text-justify text-xl text-gray-600 dark:text-gray-300">
             La misión de Canaco Servytur SCLC es representar, defender y promover los intereses legítimos del comercio, los servicios y el turismo, ante las autoridades municipales, estatales y federales.
         </p>
     </div>

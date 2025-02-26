@@ -226,7 +226,7 @@
           <a href="http://127.0.0.1:8000/" class="hover:text-gray-900">Inicio</a>
           <a href="sobrenosotros" class="hover:text-gray-900">Sobre Nosotros</a>
           <a href="afiliarte" class="hover:text-gray-900">Quieres Afiliarte</a>
-          <a href="#" class="hover:text-gray-900">Servicios</a>
+          <a href="#" class="hover:text-gray-900">Nuestros Servicios</a>
           <a href="#contacto" class="hover:text-gray-900">Contacto</a>
         </nav>
       </div>
