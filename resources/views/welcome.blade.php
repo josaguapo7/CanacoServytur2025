@@ -25,7 +25,7 @@
 
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap  justify-between  p-4">
-    <a href="index" class="flex items-center space-x-8 rtl:space-x-reverse">
+    <a  class="flex items-center space-x-8 rtl:space-x-reverse">
         <img src="https://concanacodigital.s3.amazonaws.com/establecimientos/135.20220228113405.png" class="h-16" alt="">
         <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white font-sans">Canaco</span>
     </a>
@@ -398,10 +398,11 @@
           <!-- SVG Logo -->
         </a>
         <nav class="flex flex-wrap justify-center space-x-4 text-gray-600">
-          <a href="#" class="hover:text-gray-900">Inicio</a>
-          <a href="#" class="hover:text-gray-900">Nosotros</a>
-          <a href="#" class="hover:text-gray-900">Servicios</a>
-          <a href="#" class="hover:text-gray-900">Contacto</a>
+        <a href="http://127.0.0.1:8000/" class="hover:text-gray-900">Inicio</a>
+          <a href="sobrenosotros" class="hover:text-gray-900">Sobre Nosotros</a>
+          <a href="afiliarte" class="hover:text-gray-900">Quieres Afiliarte</a>
+          <a href="#" class="hover:text-gray-900">Nuestros Servicios</a>
+          <a href="#contacto" class="hover:text-gray-900">Contacto</a>
         </nav>
       </div>
       <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
