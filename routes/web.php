@@ -50,8 +50,19 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/socios', [SocioController::class, 'index'])->name('socios.index');
+Route::get('/socios/create', [SocioController::class, 'create'])->name('socios.create');
+Route::post('/socios', [SocioController::class, 'store'])->name('socios.store');
+Route::get('/socios/{id}/edit', [SocioController::class, 'edit'])->name('socios.edit');
+Route::put('/socios/{id}', [SocioController::class, 'update'])->name('socios.update');
+Route::delete('/socios/{id}', [SocioController::class, 'destroy'])->name('socios.destroy');
+
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 });
 
 require __DIR__.'/auth.php';
+
+Route::resource('socios', SocioController::class);
+Route::get('socios/{id}/qr', [SocioController::class, 'generarQR'])->name('socios.generarQR');
+Route::post('/importar-excel', [SocioController::class, 'importarExcel'])->name('importar.excel');

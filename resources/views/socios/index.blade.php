@@ -28,6 +28,7 @@
                 <th>Nombre</th>
                 <th>Email</th>
                 <th>Teléfono</th>
+
             </tr>
             @foreach($socios as $socio)
                 <tr>

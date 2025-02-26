@@ -1,23 +1,69 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Socio;
-use App\Imports\SocioImport;
 use Illuminate\Http\Request;
-use Maatwebsite\Excel\Facades\Excel;
+use App\Models\Socio;
+use SimpleSoftwareIO\QrCode\Facades\QrCode; // Para generar QR
+use Maatwebsite\Excel\Facades\Excel; // Para importar desde Excel
+use App\Imports\SocioImport; // Importación de socios desde Excel
 
 class SocioController extends Controller
 {
-    // Método para mostrar la vista del Dashboard con los socios
     public function index()
-{
-    $socios = Socio::all(); // Obtener todos los socios
-    return view('dashboard', compact('socios')); // Enviar la variable a la vista
-}
+    {
+        $socios = Socio::all();
+        return view('dashboard', compact('socios'));
+    }
 
+    public function create()
+    {
+        return view('socios.create');
+    }
 
-    // Método para importar datos desde el archivo Excel
+    public function store(Request $request)
+    {
+        $request->validate([
+            'clave' => 'required|unique:socios',
+            'nombre' => 'required',
+        ]);
+
+        Socio::create($request->all());
+
+        return redirect()->route('socios.index')->with('success', 'Socio creado correctamente.');
+    }
+
+    public function edit($id)
+    {
+        $socio = Socio::findOrFail($id);
+        return view('socios.edit', compact('socio'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'clave' => 'required|unique:socios,clave,' . $id,
+            'nombre' => 'required',
+        ]);
+
+        $socio = Socio::findOrFail($id);
+        $socio->update($request->all());
+
+        return redirect()->route('socios.index')->with('success', 'Socio actualizado correctamente.');
+    }
+
+    public function destroy($id)
+    {
+        Socio::findOrFail($id)->delete();
+        return redirect()->route('socios.index')->with('success', 'Socio eliminado correctamente.');
+    }
+
+    public function generarQR($id)
+    {
+        $socio = Socio::findOrFail($id);
+        $qr = QrCode::size(200)->generate(route('socios.show', $socio->id));
+        return view('socios.qr', compact('socio', 'qr'));
+    }
+
     public function importarExcel(Request $request)
     {
         $request->validate([
@@ -26,6 +72,6 @@ class SocioController extends Controller
 
         Excel::import(new SocioImport, $request->file('file'));
 
-        return redirect()->route('dashboard')->with('success', '¡Datos importados correctamente!');
+        return redirect()->route('socios.index')->with('success', 'Lista de socios importada correctamente.');
     }
 }
