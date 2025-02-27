@@ -3,90 +3,79 @@
 
 <link rel="icon" type="image/png" href="{{ asset('imagenes/canaco.png') }}">
 
-<div class="flex items-center justify-end gap-3">
-    <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-       class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-       Salir
-    </a>
-
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-        @csrf
-    </form>
-</div>
-
-<div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-6">Panel de Socios</h1>
-
-    @if (session('success'))
-        <div class="bg-green-100 text-green-800 p-2 mb-4 rounded">
-            {{ session('success') }}
+<div class="flex h-screen bg-white">
+    <!-- Menú lateral -->
+    <div class="w-64 bg-gray-100 text-gray-900 p-6 flex flex-col gap-4 shadow-lg fixed h-full">
+        <h2 class="text-2xl font-semibold mb-4">Menú</h2>
+        <a href="#" class="px-4 py-2 rounded-lg hover:bg-blue-900 hover:text-white transition">Inicio</a>
+        <a href="#" class="px-4 py-2 rounded-lg hover:bg-blue-900 hover:text-white transition">Socios</a>
+        <a href="#" class="px-4 py-2 rounded-lg hover:bg-blue-900 hover:text-white transition">Configuración</a>
+    </div>
+    
+    <!-- Contenido principal -->
+    <div class="flex-1 p-8 ml-64">
+        <div class="flex items-center justify-between mb-6">
+            <h1 class="text-4xl font-bold text-blue-900">Panel de Socios</h1>
+            <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+               class="px-4 py-2 bg-red-600 text-white rounded-lg shadow-md hover:bg-red-500 transition">
+               Salir
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                @csrf
+            </form>
         </div>
-    @endif
 
-    <!-- Formulario para subir Excel -->
-    <form action="{{ route('importar.excel') }}" method="POST" enctype="multipart/form-data" class="mb-4">
-        @csrf
-        <input type="file" name="file" class="border px-4 py-2 rounded">
-        <button type="submit" class="ml-2 bg-green-500 text-white px-4 py-2 rounded">Subir Excel</button>
-    </form>
+        @if (session('success'))
+            <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded-lg mb-4">
+                {{ session('success') }}
+            </div>
+        @endif
 
-    <table class="min-w-full divide-y divide-gray-200 overflow-x-auto">
-        <thead class="bg-gray-50">
-            <tr>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Clave
-                </th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Zona Cliente
-                </th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Tipo Cliente
-                </th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Nombre
-                </th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    RFC
-                </th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Email
-                </th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Estatus
-                </th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Acciones
-                </th>
-            </tr>
-        </thead>
-        <tbody class="bg-white divide-y divide-gray-200">
-            @foreach ($socios as $socio)
-                <tr>
-                    <td class="px-6 py-4 whitespace-nowrap">{{ $socio->clave }}</td>
-                    <td class="px-6 py-4 whitespace-nowrap">{{ $socio->zona_cliente }}</td>
-                    <td class="px-6 py-4 whitespace-nowrap">{{ $socio->tipo_cliente }}</td>
-                    <td class="px-6 py-4 whitespace-nowrap">{{ $socio->nombre }}</td>
-                    <td class="px-6 py-4 whitespace-nowrap">{{ $socio->rfc }}</td>
-                    <td class="px-6 py-4 whitespace-nowrap">{{ $socio->email }}</td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full {{ $socio->estatus == 'Activo' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800' }}">
-                            {{ $socio->estatus }}
-                        </span>
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                        <a href="{{ route('socios.edit', $socio->id) }}" class="text-indigo-600 hover:text-indigo-900">Editar</a>
-                        <form action="{{ route('socios.destroy', $socio->id) }}" method="POST" style="display:inline;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" onclick="return confirm('¿Eliminar este socio?')" class="ml-2 text-red-600 hover:text-red-900">Eliminar</button>
-                        </form>
-                        <a href="{{ route('socios.generarQR', $socio->id) }}" class="ml-2 text-blue-600 hover:text-blue-900">Generar QR</a>
-                    </td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
+        <!-- Formulario para subir Excel -->
+        <form action="{{ route('importar.excel') }}" method="POST" enctype="multipart/form-data" class="mb-6 flex items-center gap-3">
+            @csrf
+            <input type="file" name="file" class="border border-gray-300 px-4 py-2 rounded-lg shadow-sm">
+            <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition">Subir Excel</button>
+        </form>
 
+        <div class="overflow-x-auto bg-white shadow-lg rounded-lg">
+            <table class="w-full min-w-max divide-y divide-gray-200">
+                <thead class="bg-blue-900 text-white">
+                    <tr>
+                        @foreach (["Clave", "Zona Cliente", "Tipo Cliente", "Nombre", "RFC", "Email", "Estatus", "Acciones"] as $header)
+                            <th class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">{{ $header }}</th>
+                        @endforeach
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    @foreach ($socios as $socio)
+                        <tr class="hover:bg-gray-100 transition-all">
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $socio->clave }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $socio->zona_cliente }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $socio->tipo_cliente }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $socio->nombre }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $socio->rfc }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $socio->email }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs font-semibold rounded-full {{ $socio->estatus == 'Activo' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800' }}">
+                                    {{ $socio->estatus }}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap flex gap-2">
+                                <a href="{{ route('socios.edit', $socio->id) }}" class="text-blue-900 hover:text-blue-600">Editar</a>
+                                <form action="{{ route('socios.destroy', $socio->id) }}" method="POST" class="inline">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" onclick="return confirm('¿Eliminar este socio?')" class="text-red-600 hover:text-red-900">Eliminar</button>
+                                </form>
+                                <a href="{{ route('socios.generarQR', $socio->id) }}" class="text-blue-600 hover:text-blue-900">Generar QR</a>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 @endsection

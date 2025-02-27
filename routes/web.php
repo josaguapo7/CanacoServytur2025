@@ -21,16 +21,13 @@ Route::get('/afiliarte', function () {
 
 Route::get('/index', function () {
     return view('index');
-    });
+});
 
 Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard');
 Route::post('/importar', [SocioController::class, 'importarExcel'])->name('importar.excel');
 
-
 Route::post('/enviar-formulario', [ContactoController::class, 'enviarFormulario'])->name('enviar.formulario');
-Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard'); // Mantén esta
-
-
+Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard');
 
 Route::get('/socios/importar', function () {
     return view('socios.import');
@@ -38,6 +35,14 @@ Route::get('/socios/importar', function () {
 
 Route::post('/socios/importar', [SocioController::class, 'importarExcel'])->name('socios.import');
 
+// Rutas para las nuevas vistas
+Route::get('/administrador', function () {
+    return view('administrador');
+})->name('vista.administrador');
+
+Route::get('/usuario', function () {
+    return view('usuario');
+})->name('vista.usuario');
 
 // Login y logout
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');

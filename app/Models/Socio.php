@@ -9,7 +9,7 @@ class Socio extends Model
     use HasFactory;
 
     protected $fillable = [
-        'clave',
+        'Clave',
         'zona_cliente',
         'tipo_cliente',
         'nombre',
