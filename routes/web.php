@@ -23,6 +23,11 @@ Route::get('/index', function () {
     return view('index');
 });
 
+Route::get('/socios', function () {
+    return view('socios');
+});
+
+
 Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard');
 Route::post('/importar', [SocioController::class, 'importarExcel'])->name('importar.excel');
 

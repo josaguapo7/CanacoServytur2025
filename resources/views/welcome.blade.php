@@ -7,11 +7,11 @@
         <title>Canaco Servytur San Cristobal</title>
         <link rel="icon" type="image/png" href="{{ asset('imagenes/canaco.png') }}">
 
-        
+
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-        
+
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @else
@@ -75,11 +75,11 @@
 </script>
 
 <section class="relative w-full h-[500px] md:h-[600px] lg:h-[700px] bg-gray-900 text-white flex items-center justify-center overflow-hidden">
-    
+
     <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('https://www.monitoratec.com.br/blog/wp-content/uploads/2020/12/AdobeStock_332234118-min-740x416.jpeg');"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-transparent"></div>
 
-    
+
     <div class="relative z-10 text-center max-w-2xl px-6">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-lg">
             Impulsamos el crecimiento de tu negocio
@@ -95,7 +95,7 @@
 </section>
 
 <a href="#" class="flex flex-col md:flex-row items-center bg-white border border-gray-300 rounded-lg shadow-lg max-w-5xl hover:shadow-xl transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto mt-20 mb-10">
-    
+
     <div class="w-full md:w-1/2 h-72 md:h-auto overflow-hidden rounded-t-lg md:rounded-l-lg">
         <img class="object-cover w-full h-full" src="{{ asset('imagenes/canaco camara.jpeg') }}">
     </div>
