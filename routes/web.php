@@ -34,9 +34,9 @@ Route::get('/socios', function () {
     return view('socios');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/usuario', function () {
+    return view('usuario');
+})->middleware(['auth'])->name('usuario');
 
 Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard');
 Route::post('/importar', [SocioController::class, 'importarExcel'])->name('importar.excel');
@@ -55,9 +55,21 @@ Route::get('/administrador', function () {
     return view('administrador');
 })->name('vista.administrador');
 
-Route::get('/usuario', function () {
-    return view('usuario');
-})->name('vista.usuario');
+Route::get('/admin', function () {
+    // Lógica para el área de administración
+})->middleware('admin');
+
+
+Route::middleware(['auth', 'checkRole:usuario'])->group(function () {
+    Route::get('/usuario', function () {
+        return view('usuario');
+    })->name('usuario');
+});
+
+Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+
+
+
 
 // Login y logout
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');

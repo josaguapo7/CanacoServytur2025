@@ -15,15 +15,12 @@ class User extends Authenticatable
         'telefono',
         'rfc',
         'password',
+        'name',
+        'role',
     ];
-
 
     protected $hidden = [
         'password',
     ];
 
-    public function isAfiliado()
-    {
-        return $this->role === 'afiliado';
-    }
 }
