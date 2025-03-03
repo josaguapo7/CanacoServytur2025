@@ -9,7 +9,13 @@
         <h2 class="text-2xl font-semibold mb-4">Menú</h2>
         <a href="#" class="px-4 py-2 rounded-lg hover:bg-blue-900 hover:text-white transition">Inicio</a>
         <a href="{{ route('socios.index') }}" class="px-4 py-2 rounded-lg hover:bg-blue-900 hover:text-white transition">Socios</a>
-        <a href="#" class="px-4 py-2 rounded-lg hover:bg-blue-900 hover:text-white transition">Configuración</a>
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit" class="px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition">
+                Cerrar sesión
+            </button>
+        </form>
+
     </div>
 
 </div>
