@@ -67,10 +67,7 @@
   });
 </script>
 
-
-  <br><br>
-
-  <div class="flex flex-col md:flex-row items-center justify-between bg-gray-100 px-8 py-10 min-h-[70vh]">
+<div class="flex flex-col md:flex-row items-center justify-between bg-gray-100 px-8 mt-24 py-10 min-h-[70vh]">
     
     <!-- Texto a la izquierda -->
     <div class="max-w-lg text-white">
@@ -113,12 +110,12 @@
     .animate-float1 { animation: float2 4s ease-in-out infinite; }
     .animate-float2 { animation: float3 4.5s ease-in-out infinite; }
 </style>
- <br>
+ 
 
 {{--<section class="bg-gray-100 py-12"> 
     <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-8">CANACO <br><br> Representando al Comercio Local</h2>
-        <br>
+        <h2 class="text-4xl font-bold text-center mb-8">CANACO Representando al Comercio Local</h2>
+        
 
         <div class="max-w-7xl flex flex-wrap md:flex-nowrap gap-6">
             <!-- Importancia de CANACO -->
@@ -126,9 +123,8 @@
                 <h3 class="text-2xl font-semibold mb-3 text-justify">Importancia de CANACO</h3>
                 <p class="text-gray-800 text-justify text-md leading-relaxed">
                     La misión de CANACO Servytur SCLC es representar, defender y promover los intereses legítimos del comercio, los servicios y el turismo ante las autoridades Municipales, Estatales y Federales.
-                    <br><br>
                     CANACO, además de defender y estar facultado por mandato de ley, según la Ley de Cámaras y sus Confederaciones, siempre abonará y propondrá una cultura de legalidad, justicia, paz, respeto, cordura, transparencia, responsabilidad social y lo más importante: EL BIENESTAR DE TODOS LOS QUE VIVIMOS EN SAN CRISTÓBAL DE LAS CASAS, EN CHIAPAS Y EN MÉXICO.
-                    <br><br>
+                   
                     En CANACO se tiene una premisa siempre anteponer el BIEN COMÚN a cualquier interés personal. Somos un órgano colegiado y tomamos decisiones en conjunto, y eso nos enriquece.
                 </p>
             </div>
@@ -138,9 +134,9 @@
                 <h3 class="text-2xl font-semibold mb-3 text-justify">Ámbito de Acción</h3>
                 <p class="text-gray-800 text-md leading-relaxed text-justify">
                     CANACO está integrada por empresarios trabajadores, honestos y responsables con sus obligaciones, generadores de la mayoría de empleos formales y con ganas de tener un mejor San Cristóbal para vivir.
-                    <br><br>
+                    
                     Todas las CANACO en el país, incluyendo CANACO SCLC, se caracterizan por representar a los micro, pequeños y medianos empresarios: como papelerías, tiendas de abarrotes, posadas, tortillerías, refaccionarias, artesanos, dulcerías, transportistas, hoteles, fondas, restaurantes, zapaterías, tiendas de ropa, etc.
-                    <br><br>
+                  
                     En CANACO contamos con un gran aliado: nuestra confederación CONCANACO, la cual nos fortalece enormemente, ya que representa a 255 cámaras y más de 655,000 afiliados en los sectores de Comercio, Servicio y Turismo.
                 </p>
             </div>
@@ -182,8 +178,8 @@
 </div>
 
 
-<br><br>
-<div class=" flex flex-col items-center py-12 px-6">
+
+<div class=" flex flex-col items-center mt-10 py-12 px-6">
     <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 text-center">
     Nuestra Red de Liderazgo y Colaboración Empresarial
     </h1>
@@ -196,13 +192,13 @@
         <div class="space-y-12 text-center md:text-right">
             <div>
                 
-                <h2 class="text-xl font-semibold text-center text-gray-900 mt-2">Consejo Directivo</h2> <br>
-                <p class="text-gray-700 text-center mr-1 text-sm">Elegido en marzo por la Asamblea, con afiliados de distintos sectores.</p>
+                <h2 class="text-xl font-semibold text-center text-gray-900 mt-2">Consejo Directivo</h2>
+                <p class="text-gray-700 text-center mt-4 mr-1 text-sm">Elegido en marzo por la Asamblea, con afiliados de distintos sectores.</p>
             </div>
             <div>
                 
-                <h2 class="text-xl font-semibold text-center text-gray-900 mt-2">Comisiones Temáticas</h2><br>
-                <p class="text-gray-600 text-center text-sm">Comisiones que fortalecen la representación empresarial.
+                <h2 class="text-xl font-semibold text-center text-gray-900 mt-2">Comisiones Temáticas</h2>
+                <p class="text-gray-600 text-center mt-4 text-sm">Comisiones que fortalecen la representación empresarial.
                 </p>
             </div>
         </div>
@@ -216,22 +212,22 @@
         <div class="space-y-12 text-center md:text-left">
             <div>
                 
-                <h2 class="text-xl font-semibold text-center text-gray-900 mt-2">Consejo Consultivo</h2><br>
-                <p class="text-gray-600 text-center text-sm">Expresidentes que asesoran en las políticas de CANACO.</p>
+                <h2 class="text-xl font-semibold text-center text-gray-900 mt-2">Consejo Consultivo</h2>
+                <p class="text-gray-600 text-center mt-4 text-sm">Expresidentes que asesoran en las políticas de CANACO.</p>
             </div>
             <div>
                 
-                <h2 class="text-xl font-semibold text-center text-gray-900 mt-2">Secciones Especializadas</h2><br>
-                <p class="text-gray-600 text-center text-sm">Grupos de comerciantes unidos por objetivos comunes.</p>
+                <h2 class="text-xl font-semibold text-center text-gray-900 mt-2">Secciones Especializadas</h2>
+                <p class="text-gray-600 text-center mt-4 text-sm">Grupos de comerciantes unidos por objetivos comunes.</p>
             </div>
         </div>
     </div>
 </div>
-<br><br>
-<div class="bg-gray-100 flex flex-col items-center py-12 min-h-screen">
 
-    <h1 class="text-4xl font-semibold text-gray-900">Quienes Somos</h1><br>
-    <p class="text-gray-800 text-lg m-20 mt-2 text-center">Somos un órgano de consulta y colaboración de las autoridades federales, estatales y municipales en todos aquellos asuntos relacionados con los intereses de quien nos dedicamos al Comercio los Servicios y el Turismo.</p>
+<div class="bg-gray-100 flex flex-col items-center mt-15 py-12 min-h-screen">
+
+    <h1 class="text-4xl font-semibold mt-8 text-gray-900">Quienes Somos</h1>
+    <p class="text-gray-800 text-lg m-20 mt-5 text-center">Somos un órgano de consulta y colaboración de las autoridades federales, estatales y municipales en todos aquellos asuntos relacionados con los intereses de quien nos dedicamos al Comercio los Servicios y el Turismo.</p>
 
     <div class=" grid md:grid-cols-2 gap-6 max-w-5xl px-4">
         <!-- Tarjeta 1 -->
@@ -272,7 +268,7 @@
         </nav>
       </div>
       <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
-        <p>© 2024 Todos los derechos reservados.</p>
+        <p>© 2025 Todos los derechos reservados.</p>
         <div class="flex space-x-4">
           <a href="#" class="hover:text-gray-900">Privacidad</a>
           <a href="#" class="hover:text-gray-900">Términos</a>

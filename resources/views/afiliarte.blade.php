@@ -96,8 +96,8 @@
 
 <body>
 
-<br><br><br><br><br>
-<div class="max-w-7xl mx-auto px-6 py-12">
+
+<div class="max-w-7xl mx-auto mt-20 px-6 py-12">
     <h2 class="text-4xl font-bold text-center mb-4">Beneficios de Afiliación</h2>
     <p class="text-center text-lg text-gray-600 mb-10">
         Al afiliarte a CANACO, obtendrás acceso a múltiples beneficios para fortalecer tu negocio.
@@ -167,10 +167,7 @@
     </div>
 </div>
 
-
-
-<br><br><br>
-<h2 class="text-4xl font-bold text-center">Simula tu Cuota de Afiliación</h2>
+<h2 class="text-4xl font-bold mt-20 text-center">Simula tu Cuota de Afiliación</h2>
     <p class="text-center text-lg text-gray-600 mt-2">
     Obtén en segundos el costo de inscripción y mantenimiento en CANACO según el número de empleados de tu negocio
     </p>
@@ -189,52 +186,46 @@
         </div>
     </div>
 
-<br><br>
-<div class="bg-white shadow-md rounded-lg p-6 text-center">
+
+<div class="bg-white shadow-md mt-10 rounded-lg p-6 text-center">
     <h2 class="text-xl font-bold text-gray-800">Descarga tus Documentos</h2>
     <p class="text-gray-600 mt-2">
         Toca la imagen para descargar el documento que necesitas.
     </p>
 
-    <div class="mt-10 mb-5 flex flex-col sm:flex-row justify-center gap-6">
-        <!-- Imagen para descargar Documento 1 -->
-         
+    <div class="mt-10 mb-5 flex flex-col sm:flex-row justify-center gap-6">     
         <a href="#" download>
             <img src="https://cdn.iconscout.com/icon/free/png-256/free-microsoft-excel-1868959-1583123.png?f=webp" alt="Descargar Documento 1" class="w-16 h-16 cursor-pointer transition-transform transform hover:scale-110">
         </a>
-
-        <!-- Imagen para descargar Documento 2 -->
         <a href="#" download>
             <img src="https://cdn-icons-png.flaticon.com/256/337/337946.png" alt="Descargar Documento 2" class="w-16 h-16 ml-10 cursor-pointer transition-transform transform hover:scale-110">
         </a>
     </div>
 </div>
 
-
-
-
 </body>
+
     <section class="pt-16 pb-7 px-2 w-full">
-    <div class="w-full px-4 lg:px-12 p-12 rounded-2xl bg-neutral-100">
-      <div class="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-200">
-        <a href="https://pagedone.io/" class="py-1.5">
-          <!-- SVG Logo -->
-        </a>
-        <nav class="flex flex-wrap justify-center space-x-4 text-gray-600">
-          <a href="http://127.0.0.1:8000/" class="hover:text-gray-900">Inicio</a>
-          <a href="sobrenosotros" class="hover:text-gray-900">Sobre Nosotros</a>
-          <a href="afiliarte" class="hover:text-gray-900">Quieres Afiliarte</a>
-          <a href="#" class="hover:text-gray-900">Nuestros Servicios</a>
-          <a href="#contacto" class="hover:text-gray-900">Contacto</a>
-        </nav>
-      </div>
-      <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
-        <p>© 2024 Todos los derechos reservados.</p>
-        <div class="flex space-x-4">
-          <a href="#" class="hover:text-gray-900">Privacidad</a>
-          <a href="#" class="hover:text-gray-900">Términos</a>
+        <div class="w-full px-4 lg:px-12 p-12 rounded-2xl bg-neutral-100">
+        <div class="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-200">
+            <a href="https://pagedone.io/" class="py-1.5">
+            <!-- SVG Logo -->
+            </a>
+            <nav class="flex flex-wrap justify-center space-x-4 text-gray-600">
+            <a href="http://127.0.0.1:8000/" class="hover:text-gray-900">Inicio</a>
+            <a href="sobrenosotros" class="hover:text-gray-900">Sobre Nosotros</a>
+            <a href="afiliarte" class="hover:text-gray-900">Quieres Afiliarte</a>
+            <a href="#" class="hover:text-gray-900">Nuestros Servicios</a>
+            <a href="#contacto" class="hover:text-gray-900">Contacto</a>
+            </nav>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
+            <p>© 2025 Todos los derechos reservados.</p>
+            <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-900">Privacidad</a>
+            <a href="#" class="hover:text-gray-900">Términos</a>
+            </div>
+        </div>
+        </div>
+    </section>
 </html>

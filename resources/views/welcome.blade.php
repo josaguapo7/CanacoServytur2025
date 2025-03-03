@@ -105,13 +105,13 @@
 
 <section class="bg-gradient-to-b from-white to-blue-50 py-16">
   <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 text-center">
-    <div class="mb-8">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-black">Nuestro Impacto en el Comercio Local</h2><br>
-      <p class="text-black mt-2">Resultados que nos respaldan: Creciendo juntos cada día</p> <br>
+    <div class="mb-15">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-black">Nuestro Impacto en el Comercio Local</h2>
+      <p class="text-black mt-5">Resultados que nos respaldan: Creciendo juntos cada día</p>
       <div class="w-24 h-1 bg-blue-900 mx-auto mt-3 rounded"></div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 mb-10 gap-8 text-center">
       <div class="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
         <img src="{{ asset('imagenes/edificio.png') }}" alt="Icono de edificio" class="w-20 h-20 mb-4">
         <h2 class="text-4xl mt-4 font-extrabold">+350</h2>
@@ -132,7 +132,7 @@
 
 
     </div>
-<br><br>
+
     <div class="mt-10">
       <a href="afiliarte" class="bg-blue-900 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-800 transition">¡Quiero ser parte!</a>
     </div>
@@ -229,9 +229,9 @@
     </details>
 </div>--}}
 
-<br>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+
+<div class="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-6 p-6">
     <div class="bg-gradient-to-br from-white to-blue-200 text-blue-900 p-6 rounded-lg shadow-lg text-center">
         <h3 class="text-xl font-bold">0 - 2 empleados</h3>
         <p class="text-lg mt-2">Cámara: <strong>$1,100.00</strong></p>
@@ -262,9 +262,9 @@
         </a>
     </div>
 </div>
-<br><br><br>
 
-<div class="relative flex flex-col md:flex-row w-full my-6 bg-white shadow-sm border border-slate-200 rounded-lg">
+
+<div class="relative flex flex-col md:flex-row w-full my-6 bg-white mt-32 shadow-sm border border-slate-200 rounded-lg">
     <div class="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden">
         <img
             src="{{ asset('imagenes/fachada.jpeg') }}"
@@ -304,10 +304,10 @@
     </div>
 </div>
 
-<br><br><br>
 
-<div id="contacto" class="max-w-1xl mx-auto p-1 md:p-6"> <br><br><br><br><br>
-    <div class="grid md:grid-cols-2 gap-8 items-start">
+
+<div id="contacto" class="max-w-1xl mt-10 mx-auto p-1 md:p-6"> 
+    <div class="grid md:grid-cols-2 gap-8 items-start mt-20">
         <div class="bg-gray-50 rounded-lg p-6">
             <h2 class="text-3xl font-bold text-indigo-900 mb-4">CANACO SERVYTUR</h2>
             <p class="text-gray-600 mb-8 text-sm">¿Tienes dudas o quieres afiliarte? Contáctanos y con gusto te atenderemos.</p>
@@ -400,7 +400,7 @@
         </nav>
       </div>
       <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
-        <p>© 2024 Todos los derechos reservados.</p>
+        <p>© 2025 Todos los derechos reservados.</p>
         <div class="flex space-x-4">
           <a href="#" class="hover:text-gray-900">Privacidad</a>
           <a href="#" class="hover:text-gray-900">Términos</a>
