@@ -19,6 +19,10 @@ Route::get('/afiliarte', function () {
     return view('afiliarte');
 });
 
+Route::get('/servicios', function () {
+    return view('servicios');
+});
+
 Route::get('/index', function () {
     return view('index');
 });

@@ -26,7 +26,7 @@
                 </div>
 
                 <button type="submit"
-                    class="w-full bg-blue-400 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition-all shadow-lg">
+                    class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition-all shadow-lg">
                     Acceder
                 </button>
             </form>

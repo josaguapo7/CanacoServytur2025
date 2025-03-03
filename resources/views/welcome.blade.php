@@ -21,7 +21,7 @@
         @endif
     </head>
 
-<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
   <div class="max-w-screen-xl flex flex-wrap justify-between items-center p-4">
     <a class="flex items-center space-x-8 rtl:space-x-reverse">
       <img src="https://concanacodigital.s3.amazonaws.com/establecimientos/135.20220228113405.png" class="h-16" alt="">
@@ -36,8 +36,8 @@
       </svg>
     </button>
 
-    <!-- Menú de navegación -->
-    <div id="navbar-sticky" class="hidden w-full md:flex md:w-auto md:order-1">
+    <!-- Menú de navegación con botón al final -->
+    <div class="hidden md:flex md:w-auto md:order-1 items-center">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
           <a href="sobrenosotros" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Sobre nosotros</a>
@@ -46,24 +46,17 @@
           <a href="afiliarte" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">¿Quieres afiliarte?</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Nuestros Servicios</a>
+          <a href="servicios" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Nuestros Servicios</a>
         </li>
         <li>
           <a href="#contacto" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Contáctanos</a>
         </li>
-        <!-- Botón de login (ahora dentro del menú en móviles) -->
-        <li class="md:hidden">
-          <a href="{{ route('login') }}" class="flex justify-center items-center py-2">
-            <img src="https://cdn-icons-png.flaticon.com/256/6542/6542962.png" alt="Login" class="w-12 h-12">
-          </a>
-        </li>
       </ul>
+      <!-- Botón de login al final del menú -->
+      <a href="{{ route('login') }}" class="ml-10 px-4 py-2 text-white bg-blue-900 rounded-lg hover:bg-blue-700 transition-all shadow-md">
+        Acceder
+      </a>
     </div>
-
-    <!-- Botón de login en pantallas grandes -->
-    <a href="{{ route('login') }}" class="hidden md:flex w-12 h-12 bg-blue-900 rounded-full items-center justify-center hover:bg-blue-700 shadow-md transition-all">
-      <img src="https://cdn-icons-png.flaticon.com/256/6542/6542962.png" alt="Login" class="w-12 h-12">
-    </a>
   </div>
 </nav>
 
