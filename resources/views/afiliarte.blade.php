@@ -77,7 +77,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">
+                    <a href="servicios" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">
                         Nuestros Servicios
                     </a>
                 </li>
