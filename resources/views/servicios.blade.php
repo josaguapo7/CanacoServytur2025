@@ -64,37 +64,3 @@
   });
 </script>
 <br><br><br><br>
-<body class="bg-gray-100 p-6">
-    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
-        <h2 class="text-xl font-bold mb-4">Preguntas Frecuentes</h2>
-        
-        @php
-            $faqs = [
-                ['pregunta' => '¿Cómo me afilio a CANACO?', 'respuesta' => 'Para afiliarte, debes completar el formulario en nuestra página web y realizar el pago correspondiente.'],
-                ['pregunta' => '¿Cuáles son los beneficios de ser socio?', 'respuesta' => 'Tendrás acceso a capacitaciones, asesorías y promociones exclusivas para afiliados.'],
-                ['pregunta' => '¿Dónde puedo pagar mi membresía?', 'respuesta' => 'Puedes realizar el pago en línea, en nuestra oficina o mediante transferencia bancaria.'],
-                ['pregunta' => '¿Cómo puedo obtener una factura de mi pago?', 'respuesta' => 'Puedes solicitar tu factura enviando un correo a facturacion@canaco.mx con tu comprobante de pago.'],
-                ['pregunta' => '¿Qué documentación necesito para afiliarme?', 'respuesta' => 'Debes presentar una identificación oficial, comprobante de domicilio y el acta constitutiva de tu empresa si aplica.'],
-                ['pregunta' => '¿Puedo actualizar mis datos como afiliado?', 'respuesta' => 'Sí, puedes actualizar tus datos ingresando a tu cuenta en nuestro portal o visitando nuestras oficinas.']
-            ];
-        @endphp
-
-        <div class="space-y-4">
-            @foreach($faqs as $faq)
-                <div class="border-b pb-2">
-                    <button class="w-full text-left font-semibold text-blue-600" onclick="toggleFaq(this)">
-                        {{ $faq['pregunta'] }}
-                    </button>
-                    <p class="hidden mt-2 text-gray-600">{{ $faq['respuesta'] }}</p>
-                </div>
-            @endforeach
-        </div>
-    </div>
-
-    <script>
-        function toggleFaq(button) {
-            let answer = button.nextElementSibling;
-            answer.classList.toggle('hidden');
-        }
-    </script>
-</body>
