@@ -6,6 +6,9 @@ use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\SocioController;
+use App\Http\Controllers\Auth\RegisteredUserController;
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,6 +33,11 @@ Route::get('/index', function () {
 Route::get('/socios', function () {
     return view('socios');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
 
 
 Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard');
@@ -80,3 +88,10 @@ require __DIR__.'/auth.php';
 Route::resource('socios', SocioController::class);
 Route::get('socios/{id}/qr', [SocioController::class, 'generarQR'])->name('socios.generarQR');
 Route::post('/importar-excel', [SocioController::class, 'importarExcel'])->name('importar.excel');
+
+
+// Muestra el formulario de registro
+Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
+
+// Procesa el formulario de registro
+Route::post('/register', [RegisteredUserController::class, 'store']);

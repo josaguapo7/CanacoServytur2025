@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -10,16 +9,21 @@ class User extends Authenticatable
     use Notifiable;
 
     protected $fillable = [
-        'name',
+        'empresa',
+        'nombre',
         'email',
+        'telefono',
+        'rfc',
         'password',
-        'role', // Asegúrate de incluir esto
     ];
 
-    public function isAdmin()
+
+    protected $hidden = [
+        'password',
+    ];
+
+    public function isAfiliado()
     {
-        return $this->role === 'admin'; // Verifica que tu base de datos tenga esta columna
+        return $this->role === 'afiliado';
     }
 }
-
-

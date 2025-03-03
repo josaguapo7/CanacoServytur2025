@@ -29,6 +29,10 @@
                     class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition-all shadow-lg">
                     Acceder
                 </button>
+                <center><a href="/register" style="display: inline-block; padding: 10px 20px; background-color: #ffffff; color: rgb(0, 0, 0); text-decoration: none; border-radius: 5px;">
+                    Regístrate
+                </a></center>
+
             </form>
         </div>
         <div class="hidden w-full md:block">
