@@ -7,8 +7,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\SocioController;
 use App\Http\Controllers\Auth\RegisteredUserController;
-
-
+use App\Http\Controllers\Auth\PasswordResetLinkController;
+use App\Http\Controllers\Auth\NewPasswordController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -37,8 +37,6 @@ Route::get('/socios', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
-
-
 
 Route::get('/dashboard', [SocioController::class, 'index'])->name('dashboard');
 Route::post('/importar', [SocioController::class, 'importarExcel'])->name('importar.excel');
@@ -89,9 +87,32 @@ Route::resource('socios', SocioController::class);
 Route::get('socios/{id}/qr', [SocioController::class, 'generarQR'])->name('socios.generarQR');
 Route::post('/importar-excel', [SocioController::class, 'importarExcel'])->name('importar.excel');
 
-
 // Muestra el formulario de registro
 Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
 
 // Procesa el formulario de registro
 Route::post('/register', [RegisteredUserController::class, 'store']);
+
+
+// Rutas para recuperación de contraseña
+
+
+// Muestra el formulario para solicitar restablecimiento de contraseña
+Route::get('/forgot-password', [PasswordResetLinkController::class, 'create'])
+    ->middleware('guest')
+    ->name('password.request');
+
+// Procesa la solicitud y envía el correo con el enlace de recuperación
+Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
+    ->middleware('guest')
+    ->name('password.email');
+
+// Muestra el formulario para restablecer la contraseña con el token recibido
+Route::get('/reset-password/{token}', [NewPasswordController::class, 'create'])
+    ->middleware('guest')
+    ->name('password.reset');
+
+// Procesa el restablecimiento de la contraseña
+Route::post('/reset-password', [NewPasswordController::class, 'store'])
+    ->middleware('guest')
+    ->name('password.update');
