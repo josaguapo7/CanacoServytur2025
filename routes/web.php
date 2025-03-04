@@ -15,6 +15,10 @@ Route::get('/sobrenosotros', function () {
     return view('sobrenosotros');
 });
 
+Route::get('/usuario', function () {
+    return view('usuario');
+});
+
 Route::get('/afiliarte', function () {
     return view('afiliarte');
 });

@@ -35,6 +35,11 @@
                     </x-primary-button>
                 </div>
             </form>
+            
+            <!-- Botón de Registro -->
+            <div class="text-center mt-6">
+                <a href="{{ route('register') }}" class="text-blue-900 font-semibold hover:underline">¿No tienes cuenta? Regístrate aquí</a>
+            </div>
         </div>
     </div>
 </x-guest-layout>
