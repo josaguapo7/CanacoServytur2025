@@ -30,21 +30,6 @@
     <!-- Menú centrado -->
     <div class="hidden md:flex flex-grow justify-center">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="http://127.0.0.1:8000/" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">
-            Inicio
-          </a>
-        </li>
-        <li>
-          <a href="sobrenosotros" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">
-            Sobre Nosotros
-          </a>
-        </li>
-        <li>
-          <a href="afiliarte" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">
-            ¿Quieres afiliarte?
-          </a>
-        </li>
       </ul>
     </div>
 
@@ -63,4 +48,50 @@
     document.getElementById("navbar-sticky").classList.toggle("hidden");
   });
 </script>
-<br><br><br><br>
+
+<br><br><br>
+
+<div class="flex justify-center items-center min-h-screen bg-gray-200">
+    <div class="max-w-2xl w-full bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 flex">
+        <div class="w-1/2 flex items-center justify-center">
+            <div class="w-full h-full">
+                <img src="{{ asset('imagenes/fachada.jpeg') }}" alt="Imagen del negocio" class="h-full w-full object-cover">
+            </div>
+        </div>
+        <div class="w-1/2 p-6 flex flex-col justify-between">
+            <div>
+                <h2 class="text-xl font-semibold text-gray-900">Información del Usuario</h2>
+                <p class="mt-2 text-sm text-gray-700"><span class="font-semibold">Usuario:</span><br> ABASTOS Y SUPLEMENTOS AGROPECUARIOS DEL SURESTE, S.A DE CV</p>
+                <p class="mt-2 text-lg font-semibold">Estatus: <span class="text-green-600">Activo</span></p>
+                <p class="mt-2 text-sm text-gray-600">Este establecimiento pertenece a la Cámara Nacional del Comercio de SC</p>
+            </div>
+            <div class="mt-4 flex justify-center">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=example" alt="QR Code" class="h-24 w-24">
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="pt-16 pb-7 px-2 w-full">
+    <div class="w-full px-4 lg:px-12 p-12 rounded-2xl bg-neutral-100">
+      <div class="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-200">
+        <a href="https://pagedone.io/" class="py-1.5">
+          <!-- SVG Logo -->
+        </a>
+        <nav class="flex flex-wrap justify-center space-x-4 text-gray-600">
+        <a href="http://127.0.0.1:8000/" class="hover:text-gray-900">Inicio</a>
+          <a href="sobrenosotros" class="hover:text-gray-900">Sobre Nosotros</a>
+          <a href="afiliarte" class="hover:text-gray-900">Quieres Afiliarte</a>
+          <a href="#" class="hover:text-gray-900">Nuestros Servicios</a>
+          <a href="#contacto" class="hover:text-gray-900">Contacto</a>
+        </nav>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
+        <p>CANACO 2025 Todos los derechos reservados.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-900">Privacidad</a>
+          <a href="#" class="hover:text-gray-900">Términos</a>
+        </div>
+      </div>
+    </div>
+</section>

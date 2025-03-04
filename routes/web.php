@@ -19,6 +19,10 @@ Route::get('/usuario', function () {
     return view('usuario');
 });
 
+Route::get('/qr', function () {
+    return view('qr');
+});
+
 Route::get('/afiliarte', function () {
     return view('afiliarte');
 });
