@@ -220,7 +220,7 @@
             </nav>
         </div>
         <div class="flex flex-col sm:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
-            <p>© 2025 Todos los derechos reservados.</p>
+            <p>CANACO 2025 Todos los derechos reservados.</p>
             <div class="flex space-x-4">
             <a href="#" class="hover:text-gray-900">Privacidad</a>
             <a href="#" class="hover:text-gray-900">Términos</a>
