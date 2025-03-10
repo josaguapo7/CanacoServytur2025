@@ -21,7 +21,6 @@
             <form method="POST" action="{{ route('password.email') }}">
                 @csrf
 
-                <!-- Email Address -->
                 <div>
                     <x-input-label for="email" :value="__('Email')" class="text-[#003366] mb-5 font-semibold" />
                     <x-text-input id="email" class="block mt-1 w-full border-gray-300 rounded-lg px-3 py-2 focus:ring-[#00509E] focus:border-[#00509E]" 
