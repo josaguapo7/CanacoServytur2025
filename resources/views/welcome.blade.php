@@ -18,20 +18,20 @@
         @endif
     </head>
 
-<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+<nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
   <div class="max-w-screen-xl flex flex-wrap justify-between items-center p-4">
     <a class="flex items-center space-x-8 rtl:space-x-reverse">
       <img src="https://concanacodigital.s3.amazonaws.com/establecimientos/135.20220228113405.png" class="h-16" alt="">
-      <span class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white font-sans">Canaco</span>
+      <span class="self-center text-4xl font-semibold whitespace-nowrap font-sans">Canaco</span>
     </a>
-    <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
       <span class="sr-only">Open main menu</span>
       <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
       </svg>
     </button>
     <div class="hidden md:flex md:w-auto md:order-1 items-center">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white md:dark:bg-gray-900">
         <li>
           <a href="sobrenosotros" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Sobre nosotros</a>
         </li>
@@ -74,15 +74,15 @@
         </a>
     </div>
 </section>
-<a href="#" class="flex flex-col md:flex-row items-center bg-white border border-gray-300 rounded-lg shadow-lg max-w-5xl hover:shadow-xl transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto mt-20 mb-10">
+<a href="#" class="flex flex-col md:flex-row items-center bg-white border border-gray-300 rounded-lg shadow-lg max-w-5xl hover:shadow-xl transition-all duration-300 mx-auto mt-20 mb-10">
     <div class="w-full md:w-1/2 h-72 md:h-auto overflow-hidden rounded-t-lg md:rounded-l-lg">
         <img class="object-cover w-full h-full" src="{{ asset('imagenes/canaco camara.jpeg') }}">
     </div>
     <div class="flex flex-col justify-between p-6 leading-relaxed w-full md:w-1/2">
-        <h5 class="mb-4 text-3xl font-extrabold tracking-wide text-gray-900 dark:text-white">
+        <h5 class="mb-4 text-3xl font-extrabold tracking-wide text-gray-900">
             CANACO SERVYTUR &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  SAN CRISTOBAL DE LAS CASAS
         </h5>
-        <p class="mb-4 text-justify text-xl text-gray-600 dark:text-gray-300">
+        <p class="mb-4 text-justify text-xl text-gray-600">
             La misión de Canaco Servytur SCLC es representar, defender y promover los intereses legítimos del comercio, los servicios y el turismo, ante las autoridades municipales, estatales y federales.
         </p>
     </div>
