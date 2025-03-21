@@ -14,10 +14,10 @@
         <p>{{ $datos['mensaje'] }}</p>
         <br>
         <br>
-        <p class="text-gray-500 dark:text-gray-400">
-            Este correo fue enviado de : <a href="mailto:{{ $datos['email'] }}" class="text-blue-600 hover:underline dark:text-blue-400">{{ $datos['email'] }}</a>.
+        <p class="text-gray-500">
+            Este correo fue enviado de : <a href="mailto:{{ $datos['email'] }}" class="text-blue-600 hover:underline">{{ $datos['email'] }}</a>.
 
-            <p class="mt-3 text-gray-500 dark:text-gray-400">© {{ date('Y') }} Canaco Servytur San Cristobal de las Casas, Chiaspas  Todos los derechos reservados.</p>
+            <p class="mt-3 text-gray-500">© {{ date('Y') }} Canaco Servytur San Cristobal de las Casas, Chiaspas  Todos los derechos reservados.</p>
     </div>
 
 
