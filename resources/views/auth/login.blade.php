@@ -5,7 +5,7 @@
 <x-guest-layout>
     <div class="min-h-screen flex flex-col justify-center items-center bg-gray-200 p-6">
         <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
-            
+
             <!-- Encabezado -->
             <div class="text-center mb-10">
                 <h2 class="text-2xl font-bold text-blue-900">Inicio de Sesión</h2>

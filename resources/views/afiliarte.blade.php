@@ -54,7 +54,8 @@
             <span class="self-center text-4xl font-semibold whitespace-nowrap font-sans">Canaco</span>
         </a>
         <div class="flex md:order-2">
-            <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+            <!-- Botón para menú en móviles -->
+            <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -179,7 +180,7 @@
         Toca el icono para descargar el documento que necesitas.
     </p>
 
-    <div class="mt-10 mb-5 flex flex-col sm:flex-row justify-center gap-6">     
+    <div class="mt-10 mb-5 flex flex-col sm:flex-row justify-center gap-6">
         <a href="#" download>
             <img src="https://cdn.iconscout.com/icon/free/png-256/free-microsoft-excel-1868959-1583123.png?f=webp" alt="Descargar Documento 1" class="w-16 h-16 cursor-pointer transition-transform transform hover:scale-110">
         </a>
