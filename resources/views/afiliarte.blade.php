@@ -179,7 +179,7 @@
         Toca el icono para descargar el documento que necesitas.
     </p>
 
-    <div class="mt-10 mb-5 flex flex-col sm:flex-row justify-center gap-6">     
+    <div class="mt-10 mb-5 flex flex-col sm:flex-row justify-center gap-6">
         <a href="#" download>
             <img src="https://cdn.iconscout.com/icon/free/png-256/free-microsoft-excel-1868959-1583123.png?f=webp" alt="Descargar Documento 1" class="w-16 h-16 cursor-pointer transition-transform transform hover:scale-110">
         </a>

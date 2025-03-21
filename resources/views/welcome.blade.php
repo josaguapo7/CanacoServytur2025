@@ -32,16 +32,16 @@
     <div class="hidden md:flex md:w-auto md:order-1 items-center">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white md:dark:bg-gray-900">
         <li>
-          <a href="sobrenosotros" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Sobre nosotros</a>
+          <a href="sobrenosotros" class="block py-2 px-3 text-lg text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Sobre nosotros</a>
         </li>
         <li>
-          <a href="afiliarte" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">¿Quieres afiliarte?</a>
+          <a href="afiliarte" class="block py-2 px-3 text-lg text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">¿Quieres afiliarte?</a>
         </li>
         <li>
-          <a href="servicios" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Nuestros Servicios</a>
+          <a href="servicios" class="block py-2 px-3 text-lg text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Nuestros Servicios</a>
         </li>
         <li>
-          <a href="#contacto" class="block py-2 px-3 text-gl text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Contáctanos</a>
+          <a href="#contacto" class="block py-2 px-3 text-lg text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-white hover:text-blue-700 hover:text-xl transition-all duration-300">Contáctanos</a>
         </li>
       </ul>
       <a href="{{ route('login') }}" class="ml-10 px-4 py-2 text-white bg-blue-900 rounded-lg hover:bg-blue-700 transition-all shadow-md">
@@ -51,9 +51,22 @@
   </div>
 </nav>
 
+<!-- Script corregido -->
 <script>
-  document.getElementById("menu-toggle").addEventListener("click", function() {
-    document.getElementById("navbar-sticky").classList.toggle("hidden");
+  document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById("menu-toggle");
+      const navbarMenu = document.getElementById("navbar-sticky");
+
+      menuToggle.addEventListener("click", function () {
+          navbarMenu.classList.toggle("hidden");
+      });
+
+      // Cerrar el menú al hacer clic en un enlace en móviles
+      document.querySelectorAll("#navbar-sticky a").forEach(link => {
+          link.addEventListener("click", () => {
+              navbarMenu.classList.add("hidden");
+          });
+      });
   });
 </script>
 

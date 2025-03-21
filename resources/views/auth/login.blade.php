@@ -3,23 +3,13 @@
 @endphp
 
 <x-guest-layout>
-    <div class="min-h-screen flex flex-col justify-center items-center bg-gray-200 p-6">
-        <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
-            
-            <!-- Encabezado -->
-            <div class="text-center mb-10">
-                <h2 class="text-2xl font-bold text-blue-900">Inicio de Sesión</h2>
-            </div>
+    <div class="flex items-center justify-center min-h-screen bg-white">
+        <div class="w-full max-w-md p-8 bg-white border border-gray-200 rounded-lg shadow-lg">
+            <!-- Session Status -->
+            <x-auth-session-status class="mb-4" :status="session('status')" />
 
-            <x-validation-errors class="mb-4" />
+            <h2 class="text-2xl font-semibold text-center text-blue-900 mb-6">Iniciar Sesión</h2>
 
-            @session('status')
-                <div class="mb-4 font-medium text-sm text-green-600">
-                    {{ $value }}
-                </div>
-            @endsession
-
-            <!-- Formulario de inicio de sesión -->
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 
