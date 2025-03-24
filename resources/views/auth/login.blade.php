@@ -1,7 +1,22 @@
 @php
     use Illuminate\Support\Facades\Route;
 @endphp
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <title>Canaco Servytur San Cristobal</title>
+        <link rel="icon" type="image/png" href="{{ asset('imagenes/canaco.png') }}">
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+        @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
+            @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @else
+            
+        @endif
+    </head>
 <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
         <div class="max-w-screen-xl flex flex-wrap justify-between items-center p-4">
             <!-- Logo -->
