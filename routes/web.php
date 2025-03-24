@@ -84,6 +84,14 @@ Route::get('/qr', function () {
     return view('qr');
 });
 
+Route::get('/reset-password', function () {
+    return view('reset-password');
+});
+
+Route::get('/forgot-password', function () {
+    return view('forgot-password');
+});
+
 Route::get('/afiliarte', function () {
     return view('afiliarte');
 });

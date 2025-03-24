@@ -20,7 +20,7 @@
 
         <div class="min-h-screen bg-gray-100">
             @livewire('navigation-menu')
-
+            
             <!-- Page Heading -->
             @if (isset($header))
                 <header class="bg-white shadow">
@@ -33,6 +33,25 @@
             <!-- Page Content -->
             <main>
                 @yield('content')
+                <div class="p-6 bg-white border border-gray-200 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Crecimiento de Usuarios</h2>
+
+                    <!-- Gráfico Estático Ilustrativo -->
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                    <div class="w-full h-full bg-white border border-gray-300 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="https://topicflower.com/blog/wp-content/uploads/2019/06/%E2%80%A2-Instagram-Stories-usuarios-activos-diarios-2019-Estad%C3%ADstica.png" alt="Gráfico de Usuarios" class="w-full h-full object-cover">
+                    </div>
+
+                        
+                        <!-- Indicador Numérico -->
+                        <div class="mt-6 flex justify-center">
+                            <div class="text-center bg-blue-500 text-white p-6 rounded-lg shadow-md w-64">
+                                <p class="text-3xl font-bold">500</p>
+                                <p class="text-lg">Usuarios Registrados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
 
